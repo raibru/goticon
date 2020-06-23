@@ -1,0 +1,42 @@
+{
+  "name": "Example-2",
+  "len": 32,
+  "parity": "odd",
+  "bitfields": [
+    {
+      "id": 1,
+      "pos": 0,
+      "len": 1,
+      "desc": "PARITY",
+      "assignable": false
+    },
+    {
+      "id": 2,
+      "pos": 1,
+      "len": 10,
+      "desc": "UNDEF",
+      "assignable": false
+    },
+    {
+      "id": 3,
+      "pos": 11,
+      "len": 1,
+      "desc": "Num1",
+      "assignable": true
+    },
+    {
+      "id": 4,
+      "pos": 12,
+      "len": 4,
+      "desc": "Num2",
+      "assignable": true
+    },
+    {
+      "id": 5,
+      "pos": 16,
+      "len": 16,
+      "desc": "UNDEF",
+      "assignable": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Example-1",
+  "len": 16,
+  "parity": "even",
+  "bitfields":
+    [
+      {
+        "id": 1,
+        "pos": 0,
+        "len": 1,
+        "desc": "PARITY",
+        "assignable": false
+      },
+      {
+        "id": 2,
+        "pos": 1,
+        "len": 2,
+        "desc": "UNDEF",
+        "assignable": false
+      },
+      {
+        "id": 3,
+        "pos": 3,
+        "len": 5,
+        "desc": "Number1",
+        "assignable": true
+      },
+      {
+        "id": 4,
+        "pos": 8,
+        "len": 4,
+        "desc": "Number2",
+        "assignable": true
+      },
+      {
+        "id": 5,
+        "pos": 12,
+        "len": 4,
+        "desc": "Number3",
+        "assignable": true
+      }
+    ]
+}

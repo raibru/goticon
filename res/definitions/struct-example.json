@@ -1,0 +1,29 @@
+{
+  "name": "Example",
+  "len": 16,
+  "parity": "even",
+  "bitfields":
+    [
+      {
+        "id": 1,
+        "pos": 0,
+        "len": 1,
+        "desc": "PARITY",
+        "assignable": false
+      },
+      {
+        "id": 2,
+        "pos": 1,
+        "len": 11,
+        "desc": "UNDEF",
+        "assignable": false
+      },
+      {
+        "id": 3,
+        "pos": 12,
+        "len": 4,
+        "desc": "IDValue",
+        "assignable": true
+      }
+    ]
+}
