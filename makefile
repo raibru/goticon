@@ -39,7 +39,7 @@ COLOR_OUTPUT = 2>&1 |                                        \
 .DEFAULT: $(help)
 
 BUILD_HASH   := $(shell git rev-parse --short HEAD)
-BUILD_NUM   := $(shell expr `cat .buildnum 2>/dev/null` + 1 >.buildnum && cat .buildnum)
+BUILD_NUM   := $(shell expr `cat .git/buildnum 2>/dev/null` + 1 >.git/buildnum && cat .git/buildnum)
 BUILD_DATE  := $(shell date +'%Y-%m-%d.%H:%M:%S')
 BUILD_TAG  := $(BUILD_HASH).$(BUILD_NUM)
 BUILD_VERSION := $(BUILD_HASH).$(BUILD_NUM) ($(BUILD_DATE))
