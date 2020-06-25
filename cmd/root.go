@@ -1,17 +1,19 @@
 package cmd
 
-var defFile string
-var rptResult bool
-var rptFile string
-var prefix string
-var postfix string
-var prtHex bool
-var prtDec bool
-var prtOct bool
-var prtBin bool
-var toUpper bool
-var dataParam string
-var prtVersion bool
+var (
+	defFile    string
+	rptResult  bool
+	rptFile    string
+	prefix     string
+	postfix    string
+	prtHex     bool
+	prtDec     bool
+	prtOct     bool
+	prtBin     bool
+	toUpper    bool
+	dataParam  string
+	prtVersion bool
+)
 
 func init() {
 	rootCmd.PersistentFlags().StringVarP(&defFile, "define-file", "d", "", "definition file contains data structure (mandatory)")

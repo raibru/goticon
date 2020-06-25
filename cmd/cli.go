@@ -7,14 +7,14 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/spf13/cobra"
 	"github.com/raibru/pktfmt/bitpackage"
+	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
 	Use:   "pktfmt",
-	Short: "Package Structure Formater",
-	Long:  `Print package structure nice format defined in a yaml definition`,
+	Short: "Package Structure Formatter",
+	Long:  `Print package structure in nice format defined inside a yaml definition file`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if err := parseParam(cmd, args); err != nil {
 			cmd.Help()
