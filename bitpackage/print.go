@@ -69,7 +69,9 @@ func PrintStructFormat(p *BitPackage, bs []Block, bpp *BasePrintParam, w io.Writ
 
 	fmt.Fprintf(w, "Definition : %s\n", p.Name)
 	fmt.Fprintf(w, "Bit Size   : %d\n", p.Len)
-	fmt.Fprintf(w, "Parity     : %s\n", p.Parity)
+	if p.Parity != "" {
+		fmt.Fprintf(w, "Parity     : %s\n", p.Parity)
+	}
 	fmt.Fprintln(w, "Bit field structure with input values:")
 
 	for _, b := range bs {
